@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* .box{
+    height: 300px;
+    width: 300px;
+    background-color: salmon;
+    border: 2px solid black;
+}
+
+.box::before{
+    content: "how's everyone ";
+}
+
+.box::after{
+    content: " all good ";
+} */
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+button{
+    padding: 20px 30px;
+    font-size: 20px;
+    border: none;
+    /* background-color: blueviolet; */
+    background-color: rgb(23, 210, 243);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s ease;
+    border-radius: 8px;
+}
+
+button:hover::before{
+    transform: scale(1.4);
+    opacity: 0;
+}
